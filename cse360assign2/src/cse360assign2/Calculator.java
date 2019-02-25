@@ -12,21 +12,24 @@ package cse360assign2;
 
 public class Calculator 
 {
-	// a private integer that will store the total
+    // a private integer that will store the total
     private int total;
+    // String that will store the operators and numbers in an equation form
+    private String history;
     
     // default constructor that will set total to zero
-    public Calculator () 
+    public CalculatoR () 
     {
-            total = 0;  // not needed - included for clarity
+        total = 0;  // not needed - included for clarity
+        history = "0 ";
     }
-    
     /**
      * This method will return the total as an integer.
      * @return 
      */
-    public int getTotal () {
-            return 0;
+    public int getTotal () 
+    {
+        return total;
     }
     
     /**
@@ -36,6 +39,7 @@ public class Calculator
      */
     public void add (int value) 
     {
+        history += ("+ " + value + " ");
         total = total + value;
     }
     
@@ -46,6 +50,7 @@ public class Calculator
      */
     public void subtract (int value) 
     {
+        history += ("- " + value + " ");
         total = total - value;
     }
     
@@ -56,6 +61,7 @@ public class Calculator
      */
     public void multiply (int value) 
     {
+        history += ("* " + value + " ");
         total = total * value;
     }
     
@@ -66,6 +72,8 @@ public class Calculator
     */
     public void divide (int value) 
     {
+        history += ("/ " + value + " ");
+        // if value is 0 then return 0 since we cant divide by 0
         if (value == 0)
             total = 0;
         else
@@ -79,6 +87,6 @@ public class Calculator
      */
     public String getHistory () 
     {
-        return "";
+        return history;
     }
 }
