@@ -12,10 +12,12 @@ package cse360assign2;
 
 public class Calculator 
 {
+	// a private integer that will store the total
     private int total;
-     
+    
     // default constructor that will set total to zero
-    public Calculator () {
+    public Calculator () 
+    {
             total = 0;  // not needed - included for clarity
     }
     
@@ -26,32 +28,35 @@ public class Calculator
     public int getTotal () {
             return 0;
     }
-
+    
     /**
      * This method will take an integer and add it to the total.
      * The method does not return anything.
      * @param value 
      */
-    public void add (int value) {
-
+    public void add (int value) 
+    {
+        total = total + value;
     }
-
+    
     /**
      * This method will take an integer and subtract it from the total.
      * The method does not return anything.
      * @param value 
      */
-    public void subtract (int value) {
-
+    public void subtract (int value) 
+    {
+        total = total - value;
     }
-
+    
     /**
      * This method will take an integer and multiply it to the total.
      * The method does not return anything.
      * @param value 
      */
-    public void multiply (int value) {
-
+    public void multiply (int value) 
+    {
+        total = total * value;
     }
     
     /**
@@ -59,16 +64,21 @@ public class Calculator
      * The method does not return anything.
      * @param value 
     */
-    public void divide (int value) {
-
+    public void divide (int value) 
+    {
+        if (value == 0)
+            total = 0;
+        else
+            total = total / value;
     }
-
+    
     /**
      * This method will return a string that contain the history of the
      * calculator.
      * @return 
      */
-    public String getHistory () {
-            return "";
+    public String getHistory () 
+    {
+        return "";
     }
 }
