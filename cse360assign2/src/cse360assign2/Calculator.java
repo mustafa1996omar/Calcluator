@@ -18,7 +18,7 @@ public class Calculator
     private String history;
     
     // default constructor that will set total to zero
-    public CalculatoR () 
+    public Calculator () 
     {
         total = 0;  // not needed - included for clarity
         history = "0 ";
