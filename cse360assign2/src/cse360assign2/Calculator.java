@@ -14,6 +14,7 @@ public class Calculator
 {
     // a private integer that will store the total
     private int total;
+    
     // String that will store the operators and numbers in an equation form
     private String history;
     
