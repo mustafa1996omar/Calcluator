@@ -17,7 +17,11 @@ public class Calculator
     // String that will store the operators and numbers in an equation form
     private String history;
     
-    // default constructor that will set total to zero
+    /**
+     * default constructor that will set total and history default values
+     * total to zero 
+     * and history to "0 "
+     */
     public Calculator () 
     {
         total = 0;  // not needed - included for clarity
@@ -73,7 +77,7 @@ public class Calculator
     public void divide (int value) 
     {
         history += ("/ " + value + " ");
-        // if value is 0 then return 0 since we cant divide by 0
+        // if value is 0 then return 0 since we can't divide by 0
         if (value == 0)
             total = 0;
         else
