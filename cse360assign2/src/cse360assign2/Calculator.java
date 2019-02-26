@@ -2,10 +2,7 @@
  * Mustafa Al Khalidi, 306, assignment 2.
  * Document your program using the following guidelines. 
  * This program will be a calculator that will perform simple arithmetics.
- * These arithmetics are add, subtract, multiply and divide.
- * The program 
- * The numbers will be sort in ascending order with no duplicates
- * The array will be printed out in to two rows that each contain 5 integers 
+ * These arithmetics are add, subtract, multiply and divide. 
  */
 
 package cse360assign2;
